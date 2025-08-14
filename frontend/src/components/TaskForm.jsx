@@ -41,7 +41,6 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded mb-6">
-      <h1 className="text-2xl font-bold mb-4">{editingTask ? 'Edit Task' : 'Purchase Stock'}</h1>
       <h1 className="text-2xl font-bold mb-4">{editingTask ? 'Edit Task' : 'Buy Stock'}</h1>
       <input
         type="text"
