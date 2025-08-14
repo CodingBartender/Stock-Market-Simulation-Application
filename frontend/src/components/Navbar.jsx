@@ -11,16 +11,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold">Task Manager</Link>
+    <nav className="text-black p-3 flex justify-between items-center">
+      <Link to="/" className="text-2xl font-bold">Stock Market Simulation</Link>
+      <p> <img src = "stock_logo_final.png" alt = "Logo" width = "1000" height = "1000" className = "" /> </p>
       <div>
         {user ? (
           <>
-            <Link to="/tasks" className="mr-4">Tasks</Link>
+            <Link to="/tasks" className="font-bold mr-4">Stocks</Link>
             <Link to="/profile" className="mr-4">Profile</Link>
             <button
               onClick={handleLogout}
-              className="bg-red-500 px-4 py-2 rounded hover:bg-red-700"
+              className="px-4 py-2 rounded hover:bg-red-700"
             >
               Logout
             </button>
