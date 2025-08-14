@@ -41,7 +41,7 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
 
   return (
     <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded mb-6">
-      <h1 className="text-2xl font-bold mb-4">{editingTask ? 'Edit Task' : 'Buy Stock'}</h1>
+      <h1 className="text-2xl font-bold mb-4">{editingTask ? 'View Stock' : 'Buy Stock'}</h1>
       <input
         type="text"
         placeholder="Stock"
@@ -55,6 +55,8 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
         value={formData.description}
         onChange={(e) => setFormData({ ...formData, description: e.target.value })}
         className="w-full mb-4 p-2 border rounded"
+        // Disabling users too change amount
+        readOnly={!!editingTask}
       />
       
       <input 
@@ -63,6 +65,9 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
         value={formData.deadline}
         onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
         className="w-full mb-4 p-2 border rounded"
+        // Disabling user too change date of purchase
+        readOnly={!!editingTask}
+
       />
 
       <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">
