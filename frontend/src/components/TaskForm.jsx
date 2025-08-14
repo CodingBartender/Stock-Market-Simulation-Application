@@ -57,6 +57,14 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
         className="w-full mb-4 p-2 border rounded"
       />
       
+      <input 
+        type="date" 
+        placeholder='Date'
+        value={formData.deadline}
+        onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
+        className="w-full mb-4 p-2 border rounded"
+      />
+
       <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">
         {editingTask ? 'Update Task' : 'Confirm Purchase'}
       </button>
