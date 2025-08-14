@@ -11,16 +11,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold">Stock Market Simulation Application</Link>
+    <nav className="text-black p-3 flex justify-between items-center">
+      <Link to="/" className="text-2xl font-bold">Stock Market Simulation</Link>
+      <p> <img src = "stock_logo_final.png" alt = "Logo" width = "100" height = "100" className = "" /> </p>
       <div>
         {user ? (
           <>
-            <Link to="/tasks" className="mr-4">Tasks</Link>
+            <Link to="/tasks" className="font-bold mr-4">Stocks</Link>
             <Link to="/profile" className="mr-4">Profile</Link>
             <button
               onClick={handleLogout}
-              className="bg-red-500 px-4 py-2 rounded hover:bg-red-700"
+              className="px-4 py-2 rounded hover:bg-red-700"
             >
               Logout
             </button>
@@ -28,12 +29,7 @@ const Navbar = () => {
         ) : (
           <>
             <Link to="/login" className="mr-4">Login</Link>
-            <Link
-              to="/register"
-              className="bg-green-500 px-4 py-2 rounded hover:bg-green-700"
-            >
-              Register
-            </Link>
+            <Link to="/register" className="bg-red-500 px-4 py-2 rounded hover:bg-green-700">Register</Link>
           </>
         )}
       </div>
