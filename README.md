@@ -1,15 +1,30 @@
-**Task Manager Application Overview:The task manager application is designed to help users efficiently manage their tasks and responsibilities by providing a user-friendly interface for creating, viewing, updating, and deleting tasks. It includes essential features such as secure user authentication, allowing individuals to sign up and log in to their accounts, as well as profile management to update personal information. With built-in validation such as input field validation and email validation, the application ensures a seamless user experience while enhancing productivity and organization in both personal and professional settings. **
+** Stock Market Simulation Application **
 
-**This apps **contain** the following features:**
+** This application helps users trade stock via buy, sell, and viewing components **
+
+**This application contains the following functions**
 
 * Signup
 * Login
 * Logout
 * Update profile
-* Add tasks
-* View tasks
-* Update tasks
-* Delete tasks
+* Buy stocks
+* View stocks
+* Sell stocks
+* Compare stocks
 
-**This **app**lication** is**almost **a** precompiled** app**. However, students will develop some features,**such as adding tasks, viewing tasks, updating tasks, and **deleting** tasks**. **Students** will interact with GitHub when they develop the features.**
+** public URL : http://52.64.227.102:3000 **
 
+** Instructions **
+
+* npm install (Install all dependencies)
+* npm run (Start Application Session)
+* View through public URL or localhost://3000
+* ctrl + c (Terminate Application Session)
+
+** Sample Login Credentials **
+
+* (Not necessary unless you don't want to create you're own account)
+* Username : test1
+* Email : test1@gmail  
+* Password : test1
