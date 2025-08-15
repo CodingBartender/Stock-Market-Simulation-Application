@@ -4,17 +4,18 @@ import axiosInstance from '../axiosConfig';
 
 const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
   const { user } = useAuth();
-  const [formData, setFormData] = useState({ title: '', description: '', deadline: '' });
+  const [formData, setFormData] = useState({ title: '', description: '', price: '', deadline: '' });
 
   useEffect(() => {
     if (editingTask) {
       setFormData({
         title: editingTask.title,
         description: editingTask.description,
+        price: editingTask.price,
         deadline: editingTask.deadline,
       });
     } else {
-      setFormData({ title: '', description: '', deadline: '' });
+      setFormData({ title: '', description: '', price: '', deadline: '' });
     }
   }, [editingTask]);
 
@@ -33,7 +34,7 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
         setTasks([...tasks, response.data]);
       }
       setEditingTask(null);
-      setFormData({ title: '', description: '', deadline: '' });
+      setFormData({ title: '', description: '', price: '', deadline: '' });
     } catch (error) {
       alert('Failed to save task.');
     }
@@ -58,7 +59,16 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
         // Disabling users too change amount
         readOnly={!!editingTask}
       />
-      
+      <input
+        // added price field
+        type="number"
+        placeholder="Price"
+        value={formData.price}
+        onChange={(e) => setFormData({ ...formData, price: e.target.value })}
+        className="w-full mb-4 p-2 border rounded"
+        // Disabling users too change amount
+        readOnly={!!editingTask}
+      />
       <input 
         type="date" 
         placeholder='Date'
