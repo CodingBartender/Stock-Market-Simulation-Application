@@ -16,7 +16,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/tasks" element={<Tasks />} />
-          <Route path="/view" element={<ViewStock />} />
+          <Route path="/viewing" element={<ViewStock />} />
         </Routes>
       </Router>
   );
