@@ -1,11 +1,11 @@
-import TaskForm from "../components/TaskForm"
-
 const ViewStock = () => {
+
     return (
-        <div>
-            <p> Hello ! </p>
+        <div className = "container mx-auto p-6">
+            
+
         </div>
-    )
-}
+    );
+};
 
 export default ViewStock;
