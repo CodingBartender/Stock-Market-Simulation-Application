@@ -18,11 +18,11 @@ const getTasks = async (req, res) => {
 /* Add Task Function */
 const addTask = async (req, res) => {
 
-    const { title, description, deadline } = req.body;
+    const { title, description, price, deadline } = req.body;
 
     try {
 
-        const task = await Task.create({ userId: req.user.id, title, description, deadline });
+        const task = await Task.create({ userId: req.user.id, title, description, price, deadline });
 
         res.status(201).json(task);
 
@@ -36,10 +36,10 @@ const addTask = async (req, res) => {
 /* Update Task */
 const updateTask = async (req, res) => {
 
-    const { title, description, completed, deadline } = req.body;
+    const { title, description, price, completed, deadline } = req.body;
 
     try {
-        /* findByld might be findByID ??? same for userID earlier */
+        
         const task = await Task.findById(req.params.id);
 
         if (!task) return res.status(404).json({ message: 'Task not found' });
@@ -47,6 +47,8 @@ const updateTask = async (req, res) => {
         task.title = title || task.title;
 
         task.description = description || task.description;
+
+        task.price = price || task.price;
 
         task.completed = completed ?? task.completed;
 

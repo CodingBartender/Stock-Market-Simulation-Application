@@ -55,6 +55,7 @@ const ViewStock = () => {
             </div>
 
             <h1 className = "text-2xl font-bold"> Owned Stock Overview </h1>
+            {console.log(tasks)}
             <TaskList 
             tasks = {tasks} 
             setTasks = {setTasks} 
