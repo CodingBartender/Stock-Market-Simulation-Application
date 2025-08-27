@@ -15,6 +15,16 @@
   "author": "Task Manager Team",
   "license": "ISC",
   "dependencies": {
+    "mongodb": "^6.19.0",
     "motion": "^12.23.12"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingBartender/taskmanager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CodingBartender/taskmanager/issues"
+  },
+  "homepage": "https://github.com/CodingBartender/taskmanager#readme"
 }

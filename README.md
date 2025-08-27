@@ -17,6 +17,15 @@
 
 ** Instructions **
 
+** Make Sure the Following is Installed **
+
+* Node.js
+* React.js
+* Express
+* Git / Github (Only if you want to operate with version control)
+* MongoDB Account
+* EC2 Account
+
 * npm install (Install all dependencies)
 * npm run (Start Application Session)
 * View through public URL or localhost://3000
@@ -28,3 +37,5 @@
 * Username : test1
 * Email : test1@gmail  
 * Password : test1
+
+** Jira Link : https://connect-team-z167ygb8.atlassian.net/jira/software/projects/SMSA/summary?atlOrigin=eyJpIjoiMzhjZDNhMzY5NDUxNDY1NmJkZmNmMDkzMDVmOTJiZjAiLCJwIjoiaiJ9 **

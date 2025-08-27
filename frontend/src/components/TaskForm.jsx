@@ -62,7 +62,7 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
       <input
         // added price field
         type="number"
-        placeholder="Price"
+        placeholder="-----"
         value={formData.price}
         onChange={(e) => setFormData({ ...formData, price: e.target.value })}
         className="w-full mb-4 p-2 border rounded"
