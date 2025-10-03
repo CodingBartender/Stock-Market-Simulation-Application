@@ -17,7 +17,7 @@
 * Session Control
 
 ** public URL : http://54.252.244.154 **
-** please note public URL will not work as EC2 instance isn't currently running **
+** please note public URL will not work as EC2 instance isn't currently running - to run locally change baseURL from live to local in axiosConfig.jsx **
 
 ** Instructions **
 
